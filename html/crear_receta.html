@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Receta</title>
+    <link rel="stylesheet" href="../css/crear_receta.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- ===================================================== -->
+      <!--  HEADER - Navegación y branding -->
+      <!-- ===================================================== -->
+      <div class="img_logo">
+        <img
+          src="../assets/logo_transparente.png"
+          alt="MeaLab Logo Oficial"
+          class="logo"
+        />
+      </div>
+      <nav class="barra_nav">
+        <a href="">Buscar</a>
+        <a href="">Crear Receta</a>
+        <a href="">Planificador</a>
+        <a href="">Favoritos</a>
+        <div class="contenedor_usuario">
+          <img
+            src="../assets/icono_chef.png"
+            alt="Icono de usuario"
+            class="icono_usuario"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===================================================== -->
+    <!--  MAIN - Contenido principal de la página -->
+    <!-- ===================================================== -->
+    <main>
+
+      <div class="img_fondo"></div>
+
+      <div class="contenido_web">
+              <div class="contenedor_titulo_crear">
+        <img src="../assets/iccono_batidor.png" alt="" class="icono_chef" />
+        <h1>Crear nueva receta</h1>
+      </div>
+      <div class="flex-row">
+        <!-- ===================================================== -->
+        <!-- Contenedor Principal -->
+        <!-- ===================================================== -->
+        <div class="contenedor_creacion">
+          <form class="formulario">
+            <label>Nombre de la receta:</label>
+            <input type="text" name="nombre_receta" />
+            <label>Ingredientes:</label>
+            <input type="text" name="ingredientes" />
+            <label>Instrucciones:</label>
+            <textarea name="instrucciones"></textarea>
+            <label for="hashtags">Hashtags:</label>
+            <input
+              type="text"
+              id="hashtags"
+              name="hashtags"
+              placeholder="#rapido #vegano #pasta"
+            />
+            <!-- Contenedor subir imagen  -->
+            <div class="contenedor_subir_imagen">
+              <img
+                src="../assets/icono_img.png"
+                alt="Icono de agregar foto"
+                class="icono_agregar_foto"
+              />
+              <label for="foto">Agregar imagen:</label>
+              <input type="file" id="foto" name="foto" accept="image/*" />
+            </div>
+            <button type="submit">Publicar</button>
+          </form>
+        </div>
+
+        <!-- ===================================================== -->
+        <!-- Contenedor Categorias  -->
+        <!-- ===================================================== -->
+
+        <div class="contenedor_filtros">
+          <form>
+            <!-- ===================================================== -->
+            <!-- Categorías -->
+            <!-- ===================================================== -->
+            <fieldset class="contenedor_categorias">
+              <legend>Categorías:</legend>
+
+              <div class="opciones_categorias">
+                <label
+                  ><input type="radio" name="categoria" value="desayuno" />
+                  Desayuno</label
+                >
+                <label
+                  ><input type="radio" name="categoria" value="postre" />
+                  Postre</label
+                >
+
+                <label
+                  ><input type="radio" name="categoria" value="almuerzo" />
+                  Almuerzo</label
+                >
+                <label
+                  ><input type="radio" name="categoria" value="bebidas" />
+                  Bebidas</label
+                >
+
+                <label
+                  ><input type="radio" name="categoria" value="cena" />
+                  Cena</label
+                >
+                <label
+                  ><input type="radio" name="categoria" value="brunch" />
+                  Brunch</label
+                >
+              </div>
+            </fieldset>
+            <!-- contenedor de dificultad y presupuesto -->
+            <div class="contenedor_dificultad_presupuesto">
+              <!-- ===================================================== -->
+              <!--  Dificultad -->
+              <!-- ===================================================== -->
+              <fieldset class="contenedor_dificultad">
+                <legend>Dificultad:</legend>
+
+                <label
+                  ><input type="radio" name="dificultad" value="facil" />
+                  Fácil</label
+                >
+                <label
+                  ><input type="radio" name="dificultad" value="media" />
+                  Media</label
+                >
+                <label
+                  ><input type="radio" name="dificultad" value="dificil" />
+                  Difícil</label
+                >
+              </fieldset>
+              <!-- ===================================================== -->
+              <!--  Presupuesto -->
+              <!-- ===================================================== -->
+              <fieldset class="contenedor_presupuesto">
+                <legend>Presupuesto:</legend>
+
+                <label
+                  ><input type="radio" name="presupuesto" value="1" /> $</label
+                >
+                <label
+                  ><input type="radio" name="presupuesto" value="2" /> $$</label
+                >
+                <label
+                  ><input type="radio" name="presupuesto" value="3" />
+                  $$$</label
+                >
+              </fieldset>
+            </div>
+
+            <!-- ===================================================== -->
+            <!--  TIEMPO DE PREPARACIÓN -->
+            <!-- ===================================================== -->
+            <fieldset class="contenedor_tiempo_preparacion">
+              <legend>Tiempo de preparación:</legend>
+
+              <label
+                ><input type="radio" name="tiempo" value="rapido" />
+                Rápido</label
+              >
+              <label
+                ><input type="radio" name="tiempo" value="medio" /> Medio</label
+              >
+              <label
+                ><input type="radio" name="tiempo" value="largo" /> Largo</label
+              >
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2026 MeaLab. Todos los derechos reservados.</p>
+    </footer>
+      </div>
+
+  </body>
+</html>

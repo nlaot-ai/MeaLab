@@ -1,0 +1,259 @@
+html, body {
+    height: 100%;             
+    margin: 2px;                 
+}
+
+body {
+    display: flex;             
+    flex-direction: column;    
+}
+
+main {
+    flex: 1;                   
+}
+
+/* ===================================================== */
+/* 1) HEADER */
+/* ===================================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra_nav {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+img {
+width: 100px;
+height: 100px;
+}
+
+.img_logo {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_usuario {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: #cacaca;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.icono_usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html, body {
+    height: 100%;             
+    margin: 2px;                 
+}
+
+
+/* ===================================================== */
+/* Título de la página */
+/* ===================================================== */
+
+.contenedor_titulo_crear{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 25px;
+    color: #040404;
+}
+
+.contenedor_titulo_crear img {
+    width: 30px;
+    height: 30px;
+}  
+
+/* ===================================================== */
+/* Contenedor principal */
+/* ===================================================== */
+.img_fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../assets/fondo_crear_receta.jpg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.3; 
+    z-index: -1; 
+}
+
+.contenido_web {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}                 
+.contenedor_creacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    background: #f5f7f9;
+    border-radius: 5px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.contenedor_subir_imagen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    margin-top: 20px;
+}
+
+.icono_agregar_foto {
+    height: 20px;
+    width: 20px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    width: 100px;
+    background-color: #9cbb96;
+    border: 2px solid #959595;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ===================================================== */
+/* Contenedor Categorias */
+/* ===================================================== */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contenedor_filtros {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    background: #f5f7f9;
+    border-radius: 5px;
+}  
+
+legend {
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.contenedor_categorias {
+    width: 370px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background: #e7eaee;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.opciones_categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contenedor_dificultad_presupuesto {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor_dificultad {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 60px;
+    width: 150px;
+    background: #e7eaee;
+    border-radius: 5px;
+}
+
+.contenedor_presupuesto {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 60px;
+    width: 150px;
+    background: #e7eaee;
+    border-radius: 5px;
+}
+
+.contenedor_tiempo_preparacion {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    gap: 20px;
+    padding: 20px;
+    height: 40px;
+    width: 353px;
+    background: #e7eaee;
+    border-radius: 5px;
+}   
+
+/* ===================================================== */
+/* 3) FOOTER */
+/* ===================================================== */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-top: 70px;
+}

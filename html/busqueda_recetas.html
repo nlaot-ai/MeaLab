@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Busqueda de recetas</title>
+    <link rel="stylesheet" href="../css/busqueda_recetas.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- ===================================================== -->
+      <!--  HEADER - Navegación y branding -->
+      <!-- ===================================================== -->
+      <div class="img_logo">
+        <img
+          src="../assets/logo_transparente.png"
+          alt="MeaLab Logo Oficial"
+          class="logo"
+        />
+      </div>
+      <nav class="barra_nav">
+        <a href="">Buscar</a>
+        <a href="">Planificador</a>
+        <a href="">Favoritos</a>
+        <div class="contenedor_usuario">
+          <img
+            src="../assets/icono_usuario.png"
+            alt="Icono de usuario"
+            class="icono_usuario"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===================================================== -->
+    <!--  MAIN - Contenido principal de la página -->
+    <!-- ===================================================== -->
+    <main>
+      <div class="img_fondo">
+      </div>
+
+      <div class="contenido_web">
+              <div class="contenedor_titulo_busqueda">
+        <img src="../assets/lupa.png" alt="" class="icono_busqueda" />
+
+        <h1>Busqueda de recetas</h1>
+      </div>
+
+      <div class="contenedor_principal">
+        <!-- ===================================================== -->
+        <!--  Contenedor de busqueda -->
+        <!-- ===================================================== -->
+        <form class="form_busqueda">
+          <!--  Búsqueda -->
+          <div class="busqueda_general">
+            <label for="busqueda" class="label_busqueda">
+              Buscar por ingredientes:
+            </label>
+
+            <input
+              type="text"
+              id="busqueda"
+              name="busqueda"
+              placeholder="Ejemplo: pollo, arroz, tomate..."
+              class="input_busqueda_general"
+            />
+
+            <button type="submit" class="boton_busqueda_general">Buscar</button>
+          </div>
+
+          <!-- Filtros -->
+
+          <div class="contenedor_filtros">
+
+            <!-- Categorías -->
+
+            <fieldset class="contenedor_categorias">
+              <legend>Categorías:</legend>
+
+              <div class="opciones">
+                <label
+                  ><input type="radio" name="categoria" value="desayuno" />
+                  Desayuno</label
+                >
+                <label
+                  ><input type="radio" name="categoria" value="postre" />
+                  Postre</label
+                >
+
+                <label
+                  ><input type="radio" name="categoria" value="almuerzo" />
+                  Almuerzo</label
+                >
+                <label
+                  ><input type="radio" name="categoria" value="bebidas" />
+                  Bebidas</label
+                >
+
+                <label
+                  ><input type="radio" name="categoria" value="cena" />
+                  Cena</label
+                >
+                <label
+                  ><input type="radio" name="categoria" value="brunch" />
+                  Brunch</label
+                >
+              </div>
+            </fieldset>
+            <!-- ===================================================== -->
+            <!-- Dificultad -->
+            <!-- ===================================================== -->
+            <fieldset class="contenedor_dificultad">
+              <legend>Dificultad:</legend>
+
+              <label
+                ><input type="radio" name="dificultad" value="facil" />
+                Fácil</label
+              >
+              <label
+                ><input type="radio" name="dificultad" value="media" />
+                Media</label
+              >
+              <label
+                ><input type="radio" name="dificultad" value="dificil" />
+                Difícil</label
+              >
+            </fieldset>
+            <!-- ===================================================== -->
+            <!-- Presupuesto -->
+            <!-- ===================================================== -->
+            <fieldset class="contenedor_presupuesto">
+              <legend>Presupuesto:</legend>
+
+              <label
+                ><input type="radio" name="presupuesto" value="1" /> $</label
+              >
+              <label
+                ><input type="radio" name="presupuesto" value="2" /> $$</label
+              >
+              <label
+                ><input type="radio" name="presupuesto" value="3" /> $$$</label
+              >
+            </fieldset>
+
+            <!-- ===================================================== -->
+            <!--  TIEMPO DE PREPARACIÓN -->
+            <!-- ===================================================== -->
+            <fieldset class="contenedor_tiempo_preparacion">
+              <legend>Tiempo de preparación:</legend>
+
+              <label
+                ><input type="radio" name="tiempo" value="rapido" />
+                Rápido</label
+              >
+              <label
+                ><input type="radio" name="tiempo" value="medio" /> Medio</label
+              >
+              <label
+                ><input type="radio" name="tiempo" value="largo" /> Largo</label
+              >
+            </fieldset>
+          </div>
+        </form>
+
+      </div>
+    </main>
+
+    <!-- ===================================================== -->
+    <!--  FOOTER -->
+    <!-- ===================================================== -->
+
+    <footer class="footer">
+      </div>
+
+      <p>&copy; 2026 MeaLab. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

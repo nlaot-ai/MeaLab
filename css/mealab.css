@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;             
+    margin: 2px;           
+}
+
+
+body {
+    display: flex;             
+    flex-direction: column;    
+}
+
+main {
+    flex: 1;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;                
+}
+/* ===================================================== */
+/*  HEADER */
+/* ===================================================== */
+
+/* Barra de navegación superior */
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+/* Contenedor del saludo y el logo */
+.contenedor_saludo_y_logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Texto de saludo */
+.saludo_a_usuario {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+
+/* ===================================================== */
+/* MAIN */
+/* ===================================================== */
+
+/* Contenedor principal (imagen + formulario) */
+.contenedor_principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+/* Imagen de la sección registro */
+.contenedor_imagen_registrarse {
+    height: 560px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ===================================================== */
+/*  FORMULARIO DE REGISTRO */
+/* ===================================================== */
+
+.formulario_registro{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #f5f7f9;
+    height: 500px;
+    width: 350px;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+
+/* ===================================================== */
+/* BOTONES REGISTRO / INICIAR SESION */
+/* ===================================================== */
+
+.contenedor_botones_registro {
+    display: flex;
+    gap: 140px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.boton_registro {
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(158, 193, 154);
+    color:  rgb(0, 0, 0);
+}
+
+.boton_iniciar_sesion {
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(196, 190, 179);
+    color: rgb(0, 0, 0);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/* ===================================================== */
+/* FORMULARIO */
+/* ===================================================== */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+/* Inputs del formulario */
+input{
+    padding:5px;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+
+/* Campos individuales */
+.campo_formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* ===================================================== */
+/* TIPO DE REGISTRO */
+/* ===================================================== */
+
+.tipo_registro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+/* ===================================================== */
+/*  TERMINOS Y CONDICIONES */
+/* ===================================================== */
+
+.checkbox_terminos_condiciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+
+/* ===================================================== */
+/*  BOTON CREAR CUENTA */
+/* ===================================================== */
+
+.contenedor_boton_crear_cuenta{
+    display: flex;
+    justify-content: center;
+}
+
+.boton_crear_cuenta {
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(158, 193, 154);
+    color:  rgb(0, 0, 0);
+}
+
+
+/* ===================================================== */
+/*  FOOTER */
+/* ===================================================== */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-top: 70px;
+}
+
+
+
+

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <!-- ===================================================== -->
+  <!--  HEAD - Metadatos, título y conexión con el CSS -->
+  <!-- ===================================================== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../css/iniciar_sesion.css" />
+  </head>
+
+  <body>
+    <!-- ===================================================== -->
+    <!--  HEADER - Navegación - Logo -->
+    <!-- ===================================================== -->
+    <header>
+      <!--  Barra de navegación superior -->
+      <nav class="top-nav">
+        <a href="#">Buscar</a>
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Registrarse</a>
+      </nav>
+
+      <!--  Contenedor del saludo y el logo -->
+      <div class="contenedor_saludo_y_logo">
+        <h1 class="saludo_a_usuario">Bienvenidos</h1>
+
+        <img
+          src="../assets/logo_transparente.png"
+          alt="MeaLab Logo Oficial"
+          class="logo"
+        />
+      </div>
+    </header>
+
+    <!-- ===================================================== -->
+    <!--  MAIN - Contenido principal de la página -->
+    <!-- ===================================================== -->
+    <main>
+      <!--  Contenedor principal -->
+      <!-- Contiene: imagen + formulario de inicio de sesión -->
+
+      <div class="contenedor_principal">
+        <!--  Imagen de la sección de inicio de sesión -->
+
+        <div class="contenedor_imagen_iniciar_sesion">
+          <img src="../assets/img_iniciar_sesion.jpg" alt="" />
+        </div>
+
+        <!-- ===================================================== -->
+        <!--  Formulario de inicio de sesión -->
+        <!-- ===================================================== -->
+        <div class="contenedor_formulario_iniciar_sesion">
+          <div class="formulario_iniciar_sesion">
+            <!--  Botones para cambiar entre registro e inicio de sesión -->
+            <div class="contenedor_botones_registro">
+              <button class="boton_iniciar_sesion">Iniciar Sesión</button>
+              <button class="boton_registro">Registrarse</button>
+            </div>
+
+            <!-- ===================================================== -->
+            <!--  Campos del formulario de inicio de sesión -->
+            <!-- ===================================================== -->
+            <div class="formulario">
+              <form>
+                <!-- Campo: Email -->
+                <div class="campo_formulario">
+                  <label>Email</label>
+                  <input type="text" />
+                </div>
+
+                <!-- Campo: Contraseña -->
+                <div class="campo_formulario">
+                  <label>Contraseña</label>
+                  <input type="password" />
+                </div>
+              </form>
+            </div>
+
+            <!-- ===================================================== -->
+            <!-- Botón de crear cuenta -->
+            <!-- ===================================================== -->
+            <div class="contenedor_boton_iniciar_sesion">
+              <button class="boton_iniciar_sesion">Iniciar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===================================================== -->
+    <!--  FOOTER - Información legal -->
+    <!-- ===================================================== -->
+    <footer class="footer">
+      <p>&copy; 2026 MeaLab. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+  <!-- ===================================================== -->
+  <!--  HEAD - Metadatos, título y conexión con el CSS -->
+  <!-- ===================================================== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../css/mealab.css" />
+  </head>
+
+  <!-- ===================================================== -->
+  <!--  BODY - Contenido visible de la página -->
+  <!-- ===================================================== -->
+  <body>
+    <!-- ===================================================== -->
+    <!--  HEADER - Navegación y branding -->
+    <!-- ===================================================== -->
+    <header>
+      <!-- Barra de navegación superior -->
+      <nav class="top-nav">
+        <a href="#">Buscar</a>
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Registrarse</a>
+      </nav>
+
+      <!--  Contenedor del saludo y el logo -->
+      <div class="contenedor_saludo_y_logo">
+        <h1 class="saludo_a_usuario">Bienvenidos</h1>
+
+        <img
+          src="../assets/logo_transparente.png"
+          alt="MeaLab Logo Oficial"
+          class="logo"
+        />
+      </div>
+    </header>
+
+    <!-- ===================================================== -->
+    <!--  MAIN - Contenido principal de la página -->
+    <!-- ===================================================== -->
+    <main>
+      <!--  Contenedor principal -->
+      <!-- Contiene: imagen + formulario de registro -->
+
+      <div class="contenedor_principal">
+        <!--  Imagen de la sección de registro -->
+
+        <div class="contenedor_imagen_registrarse">
+          <img src="../assets/img_registrarse.jpg" alt="" />
+        </div>
+
+        <!-- ===================================================== -->
+        <!--  Formulario completo de registro -->
+        <!-- ===================================================== -->
+        <div class="formulario_registro">
+          <!--  Botones para cambiar entre registro e inicio de sesión -->
+          <div class="contenedor_botones_registro">
+            <button class="boton_registro">Registrarse</button>
+            <button class="boton_iniciar_sesion">Iniciar Sesión</button>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--  Campos del formulario -->
+          <!-- ===================================================== -->
+          <div class="formulario">
+            <form>
+              <!-- Campo: Nombre -->
+              <div class="campo_formulario">
+                <label>Nombre</label>
+                <input type="text" placeholder="Nombre completo" />
+              </div>
+
+              <!-- Campo: Email -->
+              <div class="campo_formulario">
+                <label>Email</label>
+                <input type="text" placeholder="correo_ejemplo@ejemplo.com" />
+              </div>
+
+              <!-- Campo: Contraseña -->
+              <div class="campo_formulario">
+                <label>Contraseña</label>
+                <input type="password" />
+              </div>
+
+              <!-- Campo: Confirmar contraseña -->
+              <div class="campo_formulario">
+                <label>Confirmar contraseña</label>
+                <input type="password" />
+              </div>
+            </form>
+
+            <!-- ===================================================== -->
+            <!--  Tipo de usuario -->
+            <!-- ===================================================== -->
+            <div class="tipo_registro">
+              <p>Desea registrarse como:</p>
+
+              <!-- Opción Usuario -->
+              <div class="opcion_usuario">
+                <span>Usuario</span>
+                <input type="checkbox" />
+                <small>(Puede guardar recetas)</small>
+              </div>
+
+              <!-- Opción Chef -->
+              <div class="opcion_chef">
+                <span>Chef</span>
+                <input type="checkbox" />
+                <small>(Puede publicar recetas)</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--  Términos y condiciones -->
+          <!-- ===================================================== -->
+          <div class="checkbox_terminos_condiciones">
+            <input type="checkbox" id="terminos" name="terminos" />
+            <label for="terminos">Acepto los términos y condiciones</label>
+          </div>
+
+          <!-- ===================================================== -->
+          <!--  Botón de crear cuenta -->
+          <!-- ===================================================== -->
+          <div class="contenedor_boton_crear_cuenta">
+            <button class="boton_crear_cuenta">Crear Cuenta</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===================================================== -->
+    <!--  FOOTER - Información legal -->
+    <!-- ===================================================== -->
+    <footer class="footer">
+      <p>&copy; 2026 MeaLab. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
