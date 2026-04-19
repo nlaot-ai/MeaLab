@@ -159,9 +159,23 @@ button {
     background-color: #9cbb96;
     border: 2px solid #959595;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
 }
+
+button{
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.1s;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
 
 /* ===================================================== */
 /* Contenedor Categorias */
