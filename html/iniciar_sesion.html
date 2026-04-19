@@ -63,17 +63,17 @@
             <!--  Campos del formulario de inicio de sesión -->
             <!-- ===================================================== -->
             <div class="formulario">
-              <form>
+              <form id="form_login">
                 <!-- Campo: Email -->
                 <div class="campo_formulario">
                   <label>Email</label>
-                  <input type="text" />
+                  <input type="text" id="email"/>
                 </div>
 
                 <!-- Campo: Contraseña -->
                 <div class="campo_formulario">
                   <label>Contraseña</label>
-                  <input type="password" />
+                  <input type="password" id="password" />
                 </div>
               </form>
             </div>
@@ -82,7 +82,7 @@
             <!-- Botón de crear cuenta -->
             <!-- ===================================================== -->
             <div class="contenedor_boton_iniciar_sesion">
-              <button class="boton_iniciar_sesion">Iniciar</button>
+              <button class="boton_iniciar_sesion" id="boton_login">Iniciar</button>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@
     <footer class="footer">
       <p>&copy; 2026 MeaLab. Todos los derechos reservados.</p>
     </footer>
-    <script src="../js/iniciarSesion.js"></script>
+    <script src="../js/iniciar_sesion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
