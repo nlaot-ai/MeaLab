@@ -131,6 +131,10 @@ main {
     color: #040404;
 }
 
+h1 {
+    font-size: 30px;
+}
+
 .input_busqueda_general {
     height: 34px;
     width: 500px;
