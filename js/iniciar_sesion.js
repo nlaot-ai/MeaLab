@@ -1,4 +1,3 @@
-console.log("JS conectado");
 document.addEventListener("DOMContentLoaded", function () {
   const btn_login = document.getElementById("boton_login");
   const email_input = document.getElementById("email");
