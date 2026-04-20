@@ -247,7 +247,7 @@ legend {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
-    padding-top: 5px;
+    padding-top: 10px;
     height: 85px;
     width: 165px;
     background: #e7eaee;
@@ -258,7 +258,7 @@ legend {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
-    padding-top: 5px;
+    padding-top: 10px;
     height: 85px;
     width: 165px;
     background: #e7eaee;
