@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
       icon: "success",
       title: "Bienvenido",
       text: "Los datos ingresados son correctos.",
+    }).then(() => {
+      window.location.href = "busqueda_recetas.html";
     });
   });
 });
